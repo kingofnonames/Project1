@@ -148,6 +148,5 @@ public class OpenImageController {
             Imgproc.rectangle(image,faceArray[i], new Scalar(0,0,255),3);
         }
         Imgcodecs.imwrite("images/output.png",image);
-        //imageView.setImage(new Image("images/output.jpg"));
     }
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.OpenImageController"  >
+    <children>
+        <ImageView fx:id="imageView"  fitHeight="400" fitWidth="400" layoutX="100.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true"  onScroll="#handleScroll"/>
+        <Button layoutX="30.0" layoutY="550" mnemonicParsing="false" text="Save" onAction="#handleSaveButtonAction" />
+        <Button layoutX="83.0" layoutY="550.0" mnemonicParsing="false" text="Filter" onAction="#handleFilterButtonAction"/>
+        <Button layoutX="143.0" layoutY="550.0" mnemonicParsing="false" text="Detect" onAction="#handleDetectButtonAction"/>
+        <Button layoutX="210.0" layoutY="550.0" mnemonicParsing="false" text="Back" />
+        <Button layoutX="270.0" layoutY="550.0" mnemonicParsing="false" text="ZoomIn" onAction="#handleZoomInButtonAction"/>
+        <Button layoutX="350.0" layoutY="550.0" mnemonicParsing="false" text="ZoomOut" onAction="#handleZoomOutButtonAction"/>
+        <Button layoutX="440.0" layoutY="550.0" mnemonicParsing="false" text="1:1" onAction="#handleZoomOneOne"/>
+        <Button layoutX="500.0" layoutY="550.0" mnemonicParsing="false" text="Rotate" onAction="#handleRotateButtonAction"/>
+
+    </children>
+</AnchorPane>

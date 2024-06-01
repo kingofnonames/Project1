@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.controller.MainController" spacing="10" alignment="CENTER">
+    <!-- Phần trên để hiển thị ảnh -->
+    <AnchorPane fx:id="imagePane" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: lightgray;">
+        <!-- Placeholder cho ảnh -->
+        <children>
+            <!-- Bạn có thể thêm ImageView ở đây để hiển thị ảnh -->
+        </children>
+    </AnchorPane>
+
+    <!-- Phần dưới chứa các nút -->
+    <HBox spacing="50" alignment="CENTER">
+        <Button text="Open" fx:id="openButton" onAction="#open"/>
+        <Button text="Take" fx:id="takeButton" onAction="#take" />
+        <Button text="Filter" fx:id="filterButton" onAction="#filter"/>
+    </HBox>
+</VBox>
